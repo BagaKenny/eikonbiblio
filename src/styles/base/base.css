@@ -1,0 +1,47 @@
+#root, html, body {
+    margin: 0;
+    box-sizing: initial;
+    padding: 0;
+    color: #fff;
+    background-color: black;
+}
+
+body {
+    font-family: 'Melodrama-Medium';
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(255, 196, 0);
+    transition: 1s ease;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Nunito-Regular';
+}
+
+p {
+    font-size: 1rem;
+}
+.main-grid {
+    display: grid;
+}
+
+.main-grid div {
+    outline: black;
+    height: 100px;
+    width: 100px;
+}
+

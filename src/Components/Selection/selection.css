@@ -1,0 +1,50 @@
+.selection-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.selection-title {
+    font-size: 170px;
+}
+
+.date {
+    font-size: 80px;
+    margin-left: 30px;
+}
+
+.icon-spinning img {
+    width: 100%;
+    height: 100%;
+    animation: spin 5s 0.2s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+body{
+   overflow-y: scroll;
+}
+.selection-title {
+    font-size: 90px;
+}
+
+.icon-spinning img {
+    width: 100px;
+    height: 100%;
+    animation: spin 5s 0.2s infinite linear;
+}
+
+}

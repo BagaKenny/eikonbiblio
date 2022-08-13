@@ -1,0 +1,23 @@
+.project-footer {
+    display: flex;
+    width: 100%;
+    margin: 10rem 0rem;
+    justify-content: space-around;
+}
+
+.go-back-button,
+.project-footer a
+ {
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: 'Melodrama-Medium';
+    font-size: 1.8rem;
+}
+.project-footer a:hover,
+.go-back-button:hover {
+    color: rgb(255, 196, 0);
+    transition: 1s ease-out;
+    transform: scale(120%);
+}

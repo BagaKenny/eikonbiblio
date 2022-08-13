@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    padding: 1rem;
+    position: fixed;
+    z-index: 30;
+    background-color: black;
+}
+
+.header-nav {
+    width: 50%;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav ul li {
+    list-style: none;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.nav-bar-burger {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: inherit;
+    display: none;
+  }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 500px) {
+/* Styles */
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: -100vw;
+    visibility: hidden;
+    bottom: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  .show-nav {
+    visibility: visible;
+    right: 0;
+    width: 100vw;
+  }
+  .nav-bar-burger {
+    position: fixed;
+    display: block;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .nav-bar-burger:hover {
+    cursor: pointer;
+  }
+
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all .6s ease-in-out;
+  }
+
+  button {
+    all: unset;
+  }
+  .burger-bar::before,
+  .burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+  .burger-bar::after {
+    transform: translateY(12px);
+  }
+
+  .show-nav .burger-bar::before {
+    
+    transform: rotate(45deg);
+  }
+  .show-nav .burger-bar::after {
+    transform: rotate(-45deg);
+  }
+  .show-nav .burger-bar {
+    width: 0;
+    background: transparent;
+  }
+
+  .header-nav ul {
+    display: flex;
+    font-size: 30px;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+}

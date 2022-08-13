@@ -1,0 +1,147 @@
+.grid-container{
+    width: 100%;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(400px, 600px));
+    grid-template-rows: repeat(5, 300px);
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-areas: 
+    "one one four five"
+    "two three four six"
+    "seven seven seven six "
+    "eight nine ten six"
+    "eleven eleven twelve twelve"
+    ;
+}
+
+.item-1{
+    border-radius: 10px;
+    grid-area: one;
+
+}
+.item-2{
+     border-radius: 10px;
+    grid-area: two;
+
+}
+.item-3{
+    border-radius: 10px;
+    grid-area: three;
+}
+.item-4{
+    border-radius: 10px;
+    grid-area: four;
+}
+.item-5{
+    border-radius: 10px;
+    grid-area: five;
+}
+.item-6{
+    border-radius: 10px;
+    grid-area: six;
+}
+.item-7{
+    border-radius: 10px;
+    grid-area: seven;
+}
+.item-8{
+    border-radius: 10px;
+    grid-area: eight;
+}
+.item-9{
+    border-radius: 10px;
+    grid-area: nine;
+}
+.item-10{
+    border-radius: 10px;
+    grid-area: ten;
+}
+.item-11{
+    border-radius: 10px;
+    grid-area: eleven;
+}
+.item-12{
+    border-radius: 10px;
+    grid-area: twelve;
+}
+
+
+.img-contain{
+    position: relative;
+}
+
+.img-contain > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-contain .overlay {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 4;
+    font-family: 'Melodrama-Medium';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    color: rgb(92, 92, 92);
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.overlay p {
+    color: transparent;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 50px;
+    width: 100%;
+    align-self: center;
+
+}
+
+.img-contain .overlay button {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+   color: #FFF;
+   font-family:  'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    z-index: 20;
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.img-contain .overlay:hover {
+    background-color: transparent;
+    transition: 1s ease;
+}
+
+.overlay p:hover {
+color: black;
+transition: 1s ease;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.grid-container{
+    width: 100vw;
+display: flex;
+flex-direction: column;
+}
+
+
+}

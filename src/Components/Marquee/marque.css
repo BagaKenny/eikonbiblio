@@ -1,0 +1,30 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 12rem;
+  }
+  
+.marquee-text {
+    font-size: 6rem;
+}
+
+.marquee-scroller {
+    height: fit-content;
+    scroll-behavior: smooth;
+    margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.marquee {
+    margin-top: 0;
+  }
+
+
+}
