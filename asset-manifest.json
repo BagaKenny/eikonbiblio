@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/eikonbiblio/static/css/main.780aad50.css",
-    "main.js": "/eikonbiblio/static/js/main.5ad8d7fc.js",
+    "main.css": "/eikonbiblio/static/css/main.9217834a.css",
+    "main.js": "/eikonbiblio/static/js/main.fba04a0f.js",
     "static/media/arn2.png": "/eikonbiblio/static/media/arn2.95e1aaeefbc5a1208d5b.png",
     "static/media/nsenene2.webp": "/eikonbiblio/static/media/nsenene2.a8bd991c81ec9eca9c82.webp",
     "static/media/apocalypse3.jpeg": "/eikonbiblio/static/media/apocalypse3.df9371c0d1dede603796.jpeg",
@@ -53,11 +53,11 @@
     "static/media/voyagtemps.webp": "/eikonbiblio/static/media/voyagtemps.de53097db2fee0992c8d.webp",
     "static/media/logo.svg": "/eikonbiblio/static/media/logo.782dc2500ad8ca15e496ae99439df3a5.svg",
     "index.html": "/eikonbiblio/index.html",
-    "main.780aad50.css.map": "/eikonbiblio/static/css/main.780aad50.css.map",
-    "main.5ad8d7fc.js.map": "/eikonbiblio/static/js/main.5ad8d7fc.js.map"
+    "main.9217834a.css.map": "/eikonbiblio/static/css/main.9217834a.css.map",
+    "main.fba04a0f.js.map": "/eikonbiblio/static/js/main.fba04a0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.780aad50.css",
-    "static/js/main.5ad8d7fc.js"
+    "static/css/main.9217834a.css",
+    "static/js/main.fba04a0f.js"
   ]
 }
