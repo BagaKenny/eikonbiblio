@@ -45,7 +45,7 @@ const AnimatedRoutes = () => {
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           {route.map(({ path, name, Component }) => (
-            <Route key={name} path={path} element={<Component />}></Route>
+            <Route exact key={name} path={path} element={<Component />}></Route>
           ))}
         </Routes>
       </AnimatePresence>

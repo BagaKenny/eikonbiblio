@@ -13,7 +13,7 @@ import './styles/styles.css'
 const App = () => {
   return (
     <div>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <Header />
     <ScrollToTop />
       <AnimatedRoutes />
