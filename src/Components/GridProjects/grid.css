@@ -138,9 +138,11 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 .grid-container{
-    width: 100vw;
+    width: 90vw;
+    overflow: hidden;
 display: flex;
 flex-direction: column;
+padding: 0 20px;
 }
 
 

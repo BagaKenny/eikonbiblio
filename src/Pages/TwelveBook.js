@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { motion } from 'framer-motion';
 
 
 // Component
@@ -10,10 +10,17 @@ import Project from '../Components/Project/Project'
 import BordsReels from "../img/bordsreels2.jpeg";
 import BordsReels2 from "../img/bordsreels3.jpg";
 import BordsReels3 from "../img/bordsreels.jpeg";
+import Loader from '../Components/Loader/Loader';
 
 const TwelveBook = () => {
   return (
-    <div>
+    <motion.div
+       initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {  duration: 2,
+        ease: [0.87, 0, 0.13, 1],}}}
+        exit={{opacity: 0}}
+    >
+    <Loader />
       <Project 
               title="Bords Reels  "
         textContent="Ce livre fait partie de la sélection des 10 livres remarqués par le Prix Nadar 2021. Un documentaire prenant sur la Bosnie qui semble rester en léthargie malgré les 25 ans qui la sépare de la guerre. Les Bords réels traduit en photographie les violences sourdes par des portraits forts emprunts de sentiments étranges. C'est un état du temps d'un pays fantôme encore meurtri.  "
@@ -26,7 +33,7 @@ const TwelveBook = () => {
 
       />
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 

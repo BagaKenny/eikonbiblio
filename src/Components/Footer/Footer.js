@@ -11,7 +11,6 @@ import { Link, useNavigate } from 'react-router-dom'
 const Footer = (props) => {
     const navigate = useNavigate();
   return (
-    <div>
 <footer className='project-footer'>
     <div>
     <button className='go-back-button' onClick={() => navigate(-1)}> <FontAwesomeIcon icon={faArrowLeft} /> Retour</button>
@@ -21,7 +20,7 @@ const Footer = (props) => {
         Prochain Artiste <FontAwesomeIcon icon={faArrowRight} />
     </Link>}
     </footer>
-    </div>
+
   )
 }
 

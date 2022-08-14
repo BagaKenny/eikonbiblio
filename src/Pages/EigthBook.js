@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+
 import Project from "../Components/Project/Project";
 
 // Assets
@@ -7,10 +10,17 @@ import Indigne1 from "../img/indignetoit1.jpeg";
 import Indigne2 from "../img/indignetoit2.jpeg";
 // Component
 import Footer from "../Components/Footer/Footer";
+import Loader from "../Components/Loader/Loader";
 
 const EigthBook = () => {
   return (
-    <div>
+    <motion.div
+       initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {  duration: 2,
+        ease: [0.87, 0, 0.13, 1],}}}
+        exit={{opacity: 0}}
+    >
+    <Loader />
       <Project
         title="Indigne toit "
         textContent="Enquête sur les conditions de vie des quartiers pauvres de Marseille suite à deux effondrements mortels de la rue d'Aubagne. Anthony Micallef donne une voix aux délogés suite aux événements. Près de 5000 personnes ont dû quitter leur foyer pour rejoindre des hôtels. L'ouvrage est un témoignage édifiant et poignant sur le problème du mal logement.  "
@@ -22,7 +32,7 @@ const EigthBook = () => {
         img3={Indigne2}
       />
       <Footer path="/NinethBook" />
-    </div>
+    </motion.div>
   );
 };
 

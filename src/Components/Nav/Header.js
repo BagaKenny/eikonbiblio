@@ -12,7 +12,7 @@ const Header = () => {
 
 
   return (
-    <div  className={`header ${showLinks ? 'show-nav' : 'hide-nav'}`}>
+    <header  className={`header ${showLinks ? 'show-nav' : 'hide-nav'}`}>
     <div className='logo'> <Link to="/" >eikonBiblio</Link> </div>
     <button onClick={handleShowLinks} className="nav-bar-burger">
           <span className="burger-bar"></span>
@@ -39,7 +39,7 @@ const Header = () => {
             </li>
         </ul>
      </nav>
-    </div>
+    </header>
   )
 }
 

@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+
 import Project from "../Components/Project/Project";
 
 // Assets
@@ -8,10 +11,17 @@ import Citizens2 from "../img/citizenscl4.jpeg";
 
 // Component
 import Footer from "../Components/Footer/Footer";
+import Loader from "../Components/Loader/Loader";
 
 const TenthBook = () => {
   return (
-    <div>
+    <motion.div
+       initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {  duration: 2,
+        ease: [0.87, 0, 0.13, 1],}}}
+        exit={{opacity: 0}}
+    >
+    <Loader />
       <Project
         title="Citizens  "
         textContent="Christian Lutz a réalisé des photos représentant les partis de droite à travers toute l'Europe. Poussé par l'époque du Brexit, de la pandémie du coronavirus, de la crise financière et des réfugiés, il met en avant le style de vie de ces personnes qui ont leur idéal politique propre et la montée de l'Extrême droite dans la population.  "
@@ -24,7 +34,7 @@ const TenthBook = () => {
         img3={Citizens2}
       />
       <Footer path="/EleventhBook" />
-    </div>
+    </motion.div>
   );
 };
 

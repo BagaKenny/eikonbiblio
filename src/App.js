@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router} from 'react-router-dom'
 import AnimatedRoutes from './Components/AnimatedRoutes'
+import Loader from './Components/Loader/Loader'
 import Header from './Components/Nav/Header'
 
 

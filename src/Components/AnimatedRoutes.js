@@ -18,6 +18,7 @@ import NinethBook from '../Pages/NinethBook'
 import TenthBook from '../Pages/TenthBook'
 import EleventhBook from '../Pages/EleventhBook'
 import TwelveBook from '../Pages/TwelveBook'
+import Loader from "./Loader/Loader";
 
 // Router Pages
 

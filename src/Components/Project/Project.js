@@ -10,7 +10,7 @@ const Project = (props) => {
   // Pour aller à la prochaine page
 
   return (
-    <div className="book-project-container">
+    <main className="book-project-container">
       <div className="project-content">
         <div className="item-project-1">
           <h1 className="artist-title"> {props.title}</h1>
@@ -36,7 +36,7 @@ const Project = (props) => {
           <img src={props.img3} alt="" />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
